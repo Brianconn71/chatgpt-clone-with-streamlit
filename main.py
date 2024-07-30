@@ -23,7 +23,7 @@ if "model" not in st.session_state:
     st.session_state.model = "gpt-3.5-turbo"
 
 # user input
-if user_prompt := st.chat_input("Your prompt"):
+if user_prompt := st.chat_input("Enter some text"):
     st.session_state.messages.append({"role": "user", "content": user_prompt})
     with st.chat_message("user"):
         st.markdown(user_prompt)
