@@ -8,7 +8,7 @@ load_dotenv()
 
 openai.api_key = os.environ["OPENAI_PASSWORD"]
 
-st.title("My Own ChatGPT!🤖")
+st.title("Brian's ChatGPT!🤖")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
